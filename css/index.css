@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css?family=Old+Standard+TT');
+
+:root {
+    --main-color: black;
+    --secondary-color: white;
+    font-family: 'Old Standard TT';
+}
+
+body {
+    max-width: 980px;
+    margin: auto;
+}
+
+h1, h2, h3, h4, h5, p, div, nav {
+    margin: 0;
+    padding: 0;
+}
+
+header .menu {
+    padding: 0;
+}
+
+header .menu {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+} 
+
+header .menu li {
+    display: inline;
+    list-style-type: none;
+}
+
+header .menu li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--main-color);
+}
+
+header .menu li a:hover{
+    text-decoration: underline;
+}
+
+header .banner {
+    background-image: url(../img/g.jpg);
+    min-height: 550px;
+    background-size: cover;
+    background-position: center;
+     display: flex;
+     flex-direction: row-reverse;
+     justify-content: flex-end;
+     
+}
+
+header .banner h1 {
+    color: var(--secondary-color);
+    font-size: 3rem;
+}
