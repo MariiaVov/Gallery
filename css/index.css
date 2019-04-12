@@ -4,14 +4,16 @@
     --main-color: black;
     --secondary-color: white;
     font-family: 'Old Standard TT';
+    scroll-behavior: smooth;
 }
 
 body {
     max-width: 980px;
     margin: auto;
+    text-align: center;
 }
 
-h1, h2, h3, h4, h5, p, div, nav {
+ h1, h2, h3, h4, h5, div, nav, footer {
     margin: 0;
     padding: 0;
 }
@@ -42,11 +44,11 @@ header .menu li a:hover{
 }
 
 header .banner {
-    background-image: url(../img/g.jpg);
+    background-image: url(../img/gallery.jpg);
     min-height: 550px;
     background-size: cover;
     background-position: center;
-     display: flex;
+    display: flex;
      flex-direction: row-reverse;
      justify-content: flex-end;
      
@@ -55,4 +57,79 @@ header .banner {
 header .banner h1 {
     color: var(--secondary-color);
     font-size: 3rem;
+}
+
+section .information_history {
+    display: grid;
+    flex-wrap: wrap;
+    grid-template-areas: "about-history img-mural";
+}
+
+section  .title {
+    text-align: center
+}
+
+section .information_history .about-history {
+    grid-area: about-history;
+    padding: 10px;
+}
+
+section .information_history .img-mural {
+    grid-area: img-mural;
+    padding: 10px;
+}
+
+
+
+
+
+
+section .information_gallery {
+    display: grid;
+    flex-wrap: wrap;
+    grid-template-areas: "img-review about-gallery";
+}
+
+
+section .information_gallery .img-review {
+    grid-area: img-review;
+    padding: 10px;
+}
+
+section .information_gallery .about-gallery {
+    grid-area: about-gallery;
+    padding: 10px;
+}
+
+section .navigation {
+   
+}
+
+
+
+
+
+
+
+
+footer .your-form {
+    box-sizing: border-box;
+    display: block;
+    margin-top: 0em;
+}
+
+footer h5 {
+    margin-top: 40px;
+    padding: 20px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+label {
+    display: inline-block;
+    margin-bottom: .5rem;
+}
+
+label   {
+    : 31px;
 }
